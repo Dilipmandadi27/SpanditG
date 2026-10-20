@@ -328,3 +328,5 @@ footer .copy{text-align:center;margin-top:24px;color:var(--muted);font-size:.72r
 .pandit .frame .slot{position:absolute;inset:6px;width:auto;height:auto;border-radius:999px 999px 20px 20px}
 .pandit{width:210px}
 .pandit{width:196px}.pandits{gap:34px 22px}@media(max-width:520px){.pandit{width:calc(50% - 14px)}}
+.gal .up:nth-child(7){grid-column:span 2}
+.gal .imgbox{overflow:hidden}.gal .slot img{transition:transform 1s}.gal .up:hover .slot img{transform:scale(1.05)}

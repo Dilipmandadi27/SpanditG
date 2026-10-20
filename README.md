@@ -50,4 +50,6 @@ Open `admin.html`, passcode `admin123` (change it in Admin). After login, every 
 - Further ideas: convert images to WebP, serve fonts locally, add a service worker
 
 ## Deploy
+Vercel: import the repo at vercel.com/new, Framework Preset "Other", leave Build Command and Output Directory empty. Every push to main redeploys automatically (config in `vercel.json`).
+
 A GitHub Pages workflow is included (`.github/workflows/pages.yml`). In the repo go to Settings > Pages > Source: GitHub Actions.
