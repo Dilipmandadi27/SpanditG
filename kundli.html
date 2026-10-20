@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Free Kundli | SPanditG</title><meta name="description" content="SPanditG: book a trusted pandit online for puja, havan, wedding, Vastu and Jyotish.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500;600;700&family=Tiro+Devanagari+Hindi&display=swap">
+<link rel="stylesheet" href="assets/css/site.css"></head><body >
+<main><div class="pagehero"><div class="wrap"><div class="eyebrow">Free Astrology Tools</div><h1 class="hl ">Make the complex, <span>plainly simple.</span></h1><p>Get your Janam Kundli, Moon sign, Nakshatra, planet positions today and key dosha checks. Free.</p></div></div><section id="tools" data-mandala="c" style="padding-top:20px"><div class="wrap">    <div class="toolgrid">
+      <form id="kform" class="glasscard" novalidate>
+        <h3 style="font-size:1.15rem;margin-bottom:4px">Your Birth Details</h3>
+        <p class="need">You need three things: <b>date of birth</b>, <b>exact time of birth</b> (for the Ascendant and houses) and <b>place of birth</b>.</p>
+        <label class="f">Name (optional)<input type="text" id="k-name" autocomplete="name"></label>
+        <label class="f">Date of birth<input type="date" id="k-dob" value="1990-01-01"></label>
+        <label class="f">Time of birth<input type="time" id="k-tob" value="10:30"></label>
+        <label class="f">Place of birth<select id="k-place"></select></label>
+        <div class="two" id="k-manual" hidden>
+          <label class="f">Latitude (N +)<input type="text" id="k-lat" inputmode="decimal" placeholder="19.07"></label>
+          <label class="f">Longitude (E +)<input type="text" id="k-lon" inputmode="decimal" placeholder="72.87"></label>
+        </div>
+        <label class="f">Time zone<select id="k-tz">
+          <option value="5.5">India (IST, UTC+5:30)</option><option value="4">UAE (UTC+4)</option><option value="5">Pakistan (UTC+5)</option><option value="5.75">Nepal (UTC+5:45)</option><option value="6">Bangladesh (UTC+6)</option><option value="8">Singapore (UTC+8)</option><option value="0">UK (UTC+0)</option><option value="1">Europe (UTC+1)</option><option value="-5">US East (UTC-5)</option><option value="-8">US West (UTC-8)</option>
+        </select></label>
+        <button class="btn" type="submit">Generate Free Kundli</button>
+        <p class="msg" id="k-msg" role="status"></p>
+      </form>
+      <div class="glasscard" id="kout">
+        <div class="tabs" role="tablist">
+          <button role="tab" aria-selected="true" data-t="kundli" type="button">Kundli</button>
+          <button role="tab" aria-selected="false" data-t="transit" type="button">Today's Transits</button>
+          <button role="tab" aria-selected="false" data-t="dosha" type="button">Dosha Check</button>
+        </div>
+        <div class="chips" id="chips"></div>
+        <div id="pane-kundli" class="pane"></div>
+        <div id="pane-transit" class="pane" hidden></div>
+        <div id="pane-dosha" class="pane" hidden></div>
+        <p class="fine" id="k-sample"></p>
+        <p class="fine">Calculated with the Lahiri system and whole-sign houses. Accuracy is about 1 degree, so a planet very near a sign edge may differ, and a few minutes of birth time can change the Ascendant. These are free guides, not a full reading.</p>
+      </div>
+    </div>
+</div></section><section data-mandala="r"><div class="wrap"><div class="head"><div class="eyebrow">Want more?</div><h2 class="hl sm">Go deeper with <span>our Panditji</span></h2><p>The free tools show the basics. For detailed readings, advice and remedies, chat with us on WhatsApp.</p></div><div class="prem" id="prem"></div></div></section></main>
+<script src="assets/js/site.js"></script><script src="assets/js/kundli.js"></script></body></html>
